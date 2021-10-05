@@ -1,0 +1,270 @@
+/* стандартные настройки */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0 auto;
+
+    font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
+    color: #d1cbd6;
+    background-color: #2e3b40;
+}
+ 
+header {
+    color: #313436;
+    background: #290436;
+    display:flex;
+    justify-content: space-between; 
+    padding: 30px 400px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 400px;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px  rgba(139, 58, 245, 0.452);
+}
+
+h3 {
+    text-shadow: 1px 1px 2px  rgba(139, 58, 245, 0.452);
+    display: block;
+    margin-bottom: 20px;
+}
+.theme-button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.theme-button:hover{
+    background: #000000;
+    }
+    .topbutton {
+    width:100px;
+    border:2px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:10px;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    cursor:pointer;
+    color:#333;
+    font-family:arial;
+    font-size:14px;
+    text-decoration: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    }
+
+
+/* лого */
+.logo-img img {
+    height: 220px;
+    width: auto;
+}
+
+/* меню */
+.hor-menu ul li {
+    list-style: none;
+    float: left;
+    padding: 15px 0px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    background-image: linear-gradient(132deg, #07f5ff 35%, #d003c1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* телефон */
+
+.hor-menu img {
+    height: 40px;
+    width: auto;
+}
+
+ button.call {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 0; 
+}
+
+.hor-menu li:hover {
+    -webkit-transform: scale(1.2,);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1.2s;
+    border-image-source: linear-gradient(to left, #d003c1, #07f5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hor-menu li:not(:hover) {
+    transition: 1.2s;
+}
+/* стили для секции со  слайдером */
+.carousel-wrapper {
+    height:300px;
+    position:relative;
+    width:500px;
+    margin:0 auto;
+}
+  
+.carousel-item {
+    padding-top: 50px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:85px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+  
+.arrow {
+    border: solid #5a0054 ;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 7px;
+    color: #ffffff;
+}
+  
+.arrow-prev {
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+    color: #ffffff;
+}
+  
+.arrow-next {
+    right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+}
+
+[id^="item"] {
+      display: none;
+}
+  
+.item-1 {
+      z-index: 2;
+      opacity: 1;
+}
+  
+*:target ~ .item-1 {
+      opacity: 0;
+}
+  
+#item-1:target ~ .item-1 {
+      opacity: 1;
+}
+  
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4  {
+      z-index: 3;
+      opacity: 1;
+}
+
+/* стили для блоков */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Urbanist', sans-serif;
+}
+/* стиль для католога и особенностей */
+.feature-wrapper, .list-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+/* особенности  */
+.feature-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+/* особенности картинка */
+.feature-wrapper img {
+    height: 350px;
+
+}
+/* каталог */
+.list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* элементы каталога */
+.list-item  {
+    width: auto;
+    height: 150px;
+    margin-right: 50px;
+}
+
+.list-item:last-child {
+    margin-right: 0;
+}
+
+.subscribe{
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    position: relative;
+    right: -300;
+    top:-90;
+
+}
+
+.list-item-5, .list-item-6, .list-item-7 {
+    margin-top: 170px;
+
+}
+/* картинки  */
+.list-item img {
+    height: 200px;
+    width: auto;
+}
+
+.list-item p {
+    margin-bottom: 20px;
+}
+
+
+/* информация о соотрудниках*/
+.consultant-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: row;
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.consultant-wrapper img {
+    border-radius: 100px;
+    height: 300px;
+    width: auto;
+}
