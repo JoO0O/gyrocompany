@@ -75,6 +75,11 @@ h3 {
     height: 220px;
     width: auto;
 }
+.logo-img {
+    background: url(file:///C:/OpenServer/domains/localhost/saity/images/fon.jpg);
+    border-radius: 10px;
+}
+
 
 /* меню */
 .hor-menu ul li {
@@ -97,6 +102,7 @@ h3 {
     width: auto;
 }
 
+
  button.call {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -116,13 +122,15 @@ h3 {
 .hor-menu li:not(:hover) {
     transition: 1.2s;
 }
-/* стили для секции со  слайдером */
+/* стили для блока со  слайдером */
 .carousel-wrapper {
     height:300px;
     position:relative;
     width:500px;
     margin:0 auto;
 }
+
+
   
 .carousel-item {
     padding-top: 50px;
@@ -151,15 +159,23 @@ h3 {
     position:absolute;
     top:50%;
     transform:translateY(-50%) rotate(135deg);
+    opacity: 1;
 }
+.arrow-prev:hover {
+    opacity: 0.7;
+}
+
   
 .arrow-next {
     right:-30px;
     position:absolute;
     top:50%;
     transform:translateY(-50%) rotate(-45deg);
+    opacity: 1;
 }
-
+.arrow-next:hover {
+    opacity: 0.7;
+}
 [id^="item"] {
       display: none;
 }
@@ -181,6 +197,10 @@ h3 {
       z-index: 3;
       opacity: 1;
 }
+
+
+
+
 
 /* стили для блоков */
 .wrapper {
@@ -238,7 +258,8 @@ h3 {
 .list-item p {
     margin-bottom: 20px;
 }
-.subscribe{
+/* кнопка подписки  */
+.subscribe{ 
     max-width: 150px;
     max-height: 150px;
     display: flex;
@@ -264,4 +285,76 @@ h3 {
     border-radius: 100px;
     height: 300px;
     width: auto;
+}
+.cons1 {
+    opacity: 0.8;
+}
+.cons2 {
+    opacity: 0.8;
+}
+.cons3 {
+    opacity: 0.8;
+}
+/* таблица с описанием товара */
+
+.seegway {
+
+padding: 20px 33px;
+text-align: right;
+margin: 20px 0;
+}
+.gyro{
+border-right: 2px solid #ADADAD;
+padding: 20px 33px;
+text-align: right;
+margin: 20px 0;
+}
+.elsam{
+border-right: 2px solid #ADADAD;
+padding: 20px 33px;
+text-align: right;
+margin: 20px 0;
+}
+/* анимация для таблицы с описанием товара */
+.gyro_f {
+  display: inline-block; 
+  overflow:visible ; 
+}
+.gyro_f img {
+  transition: 1s; 
+  display: block; 
+}
+.gyro_f  img:hover {
+  transform: scale(1.2); 
+}
+.seegway_f {
+  display: inline-block; 
+  overflow:visible ; 
+}
+.seegway_f img {
+  transition: 1s; 
+  display: block; 
+}
+.seegway_f img:hover {
+  transform: scale(1.2); 
+}
+.elsam_f {
+  display: inline-block; 
+  overflow:visible ; 
+}
+.elsam_f img {
+  transition: 1s; 
+  display: block; 
+}
+.elsam_f  img:hover {
+  transform: scale(1.2); 
+}
+.gyro_text {
+    opacity: 0.9;
+}
+.seegway_text {
+    opacity: 0.9;
+}
+.elsam_text {
+    opacity: 0.9;
 }
