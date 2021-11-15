@@ -74,12 +74,6 @@ h3 {
 .logo-img img {
     height: 220px;
     width: auto;
-}
-.logo-img {
-    background: url(file:///C:/OpenServer/domains/localhost/saity/images/fon.jpg);
-    border-radius: 10px;
-}
-
 
 /* меню */
 .hor-menu ul li {
